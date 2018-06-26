@@ -23,29 +23,17 @@ class App extends Component {
     this.updateEditStatus = this.updateEditStatus.bind(this)
   }
 
-  updateColor(val) {
-    this.setState({ 
-      fontColor: val 
-      });
-  }
+  updateColor = (val) => this.setState({
+    color: val })
 
-  updateSize(val) {
-    this.setState({
-      fontSize: val
-      });
-  }
+  updateSize = (val) => this.setState({
+    fontSize: val })
 
-  updateFamily(val) {
-    this.setState({
-      fontFamily: val
-    });
-  }
+  updateFamily = (val) => this.setState({
+    fontFamily: val })
 
-  updateEditStatus(val) {
-    this.setState({
-      allowEdit: val
-    });
-  }
+  updateEditStatus = (val) => this.setState({
+    allowEdit: val })
 
   render() {
     return (
